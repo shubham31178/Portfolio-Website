@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0427ddd984.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Activities</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            
+            <h1>Hi, I'm <span><br>Shubham Prasad</span></h1>
+            <p>Undergraduate student at <br>Birla Institute of Technology, Mesra</p>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm an engineering student at the Birla Institute of Technology, Mesra, with a strong passion for computer languages and web development. My programming journey began in class 9, and I've since honed my skills in Java, Python, C, and JavaScript. Currently, I'm actively learning web development to expand my technical skillset.
+
+                Beyond academics, I enjoy creative pursuits like cycling and sketching. My academic background includes scoring 92% in my class 10th board exams (CISCE) at Narbheram Hansraj English School and 80% in my class 12th board exams (CBSE) at DAV Public School, Bistupur.  Building on this foundation, I've actively participated in coding events like Hackathons and Hacktoberfest, even emerging victorious in some!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span></span>Web Development (HTML, CSS, JavaScript)</li>
+                        <li><span></span>JAVA</li>
+                        <li><span></span>PYTHON</li>
+                        <li><span></span>C Language</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>MECHANICAL ENGINEERING, 4-YEARS (BTECH)</span><br>Birla Institute of Technology, Mesra, Ranchi, Jharkhand, India</li>
+                        <li><span>ICSE (CLASS X)</span><br>Computer Science + Physics + Chemistry + Maths<br>Result: 92%</li>
+                        <li><span>CBSE (CLASS XII)</span><br>Computer Science + Physics + Chemistry + Maths<br>Result: 80%</li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Activities</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>While I'm currently adept at crafting basic websites like this, I'm actively involved in projects that will elevate my design skills to a more advanced level.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-sketch"></i>
+                <h2>Sketch</h2>
+                <p>I'm skilled at sketching and have a portfolio of many completed pieces.
+                    I enjoy sketching and have created a collection of various works.</p>
+                    <a href="https://www.instagram.com/stories/highlights/18275106169094952/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-youtube"></i>
+                <h2>YouTube</h2>
+                <p>I've been making some YouTube videos with tips and strategies for acing the SAT, TOEFL, BITSAT, and JEE exams!</p>
+                <a href="https://www.youtube.com/@CareerPath-JEE">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-11.png">
+                <div class="layer">
+                    <h3>Portrait</h3>
+                    <p>Portrait art captures individuals' likeness, character, emotions, and essence using various mediums and styles.</p>
+                    <a href="https://photos.app.goo.gl/xKNM8spkNwRTBCBk6"><i class="fa-solid fa-link"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-22.png">
+                <div class="layer">
+                    <h3>Gesture Control Game</h3>
+                    <p>Navigate the game using hand and facial gestures for interactive control and immersion.</p>
+                    <a href="https://photos.app.goo.gl/r5bSx7j5igaSBKjb8"><i class="fa-solid fa-link"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-33.png">
+                <div class="layer">
+                    <h3>Kaya Yoga Classes</h3>
+                    <p>Discover tranquility and wellness with Kaya Yoga Classes' expertly crafted website.</p>
+                    <a href="https://kayayogaclasses.netlify.app/"><i class="fa-solid fa-link"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>sprp981@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+91 8092448499</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/shubham_pd2/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shubham-prasad-0033961ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/shubham31178"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://t.me/sprp981"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <a href="images/my-cv2.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id ="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright <i class="fa-regular fa-copyright"></i> Shubham Prasad. Made with <i class="fa-solid fa-heart-pulse"></i> </p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab"); <!--shows info of the tab which is selected-->
+    }
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyBmLomyB5-L6M81DIFaCz7ikrUieP_wQHK7Mb9OrklJSPlV6_Lc-lLD_oJeiid3hqw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
